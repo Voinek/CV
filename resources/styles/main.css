@@ -20,8 +20,8 @@ body {
 
 #container-content2,
 .hidden,
-#pass2,
-#confirmPass {
+#password2,
+#confirm-password {
     display: none;
 }
 
@@ -51,7 +51,7 @@ button:hover {
     cursor: pointer;
 }
 
-#registerBtn:hover {
+#login-register-switch:hover {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -69,7 +69,7 @@ button:hover {
 }
 
 
-#exitPopup {
+#exit-popup {
     float: right;
     margin: 0 5px;
     user-select: none;
@@ -79,6 +79,15 @@ button:hover {
 .scretch {
     animation: resizePanel 1s ease-in;
     animation-fill-mode: forwards;
+}
+
+#framework-info {
+    float: right;
+    background: rgba(146, 146, 146, 0.168);
+    padding: 20px;
+    border-radius: 5px;
+    color: rgb(116, 116, 116);
+    text-align: center;
 }
 
 @keyframes resizePanel {
