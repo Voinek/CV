@@ -14,3 +14,7 @@ const LoginCredentials = {
     minPasswordLength:8,
 }
 
+const AnimationSettings = {
+    delayTime: 500,
+    durationTime: 500,
+}

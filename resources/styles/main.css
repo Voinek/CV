@@ -105,3 +105,10 @@ button:hover {
         border-radius: 0;
     }
 }
+
+.menu-appear-stage-one,
+.menu-appear-stage-two,
+.menu-appear-stage-three,
+.menu-appear-stage-four {
+    display: none;
+}

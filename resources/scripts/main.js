@@ -14,9 +14,11 @@ const VariablesJQuery = {
     containerContent : $('#container-content'),
     containerContentMenu : $('#container-content2'),
     currentFramework: $('#framework'),
+    menuStageOne: $('.menu-appear-stage-one'),
+    menuStageTwo: $('.menu-appear-stage-two'),
+    menuStageThree: $('.menu-appear-stage-three'),
+    menuStageFour: $('.menu-appear-stage-four'),
 }
-
-VariablesJQuery.currentFramework.text('jQuery');
 
 $(document).ready(()=>{
     //Intro text and writing effect function
@@ -88,12 +90,7 @@ $(document).ready(()=>{
             Popup.resize(PopupSettings.time);
         }
         else {
-            VariablesJQuery.container.addClass('scretch');
-            VariablesJQuery.containerContent.fadeOut(500);
-            setTimeout(()=>{
-                VariablesJQuery.containerContentMenu.fadeIn(500);
-            },500)
-            
+            animateMenu(AnimationSettings.durationTime, AnimationSettings.delayTime);
         }
     })
 
