@@ -1,0 +1,19 @@
+const animateMenu = (durationTime, delayTime) =>{
+    VariablesJQuery.container.addClass('scretch');
+    VariablesJQuery.containerContent.fadeOut(AnimationSettings.durationTime);
+    setTimeout(()=>{
+        VariablesJQuery.containerContentMenu.fadeIn(durationTime);
+        setTimeout(()=>{
+            VariablesJQuery.menuStageOne.fadeIn(durationTime);
+            setTimeout(()=>{
+                VariablesJQuery.menuStageTwo.fadeIn(durationTime);
+                setTimeout(()=>{
+                    VariablesJQuery.menuStageThree.fadeIn(durationTime);
+                    setTimeout(()=>{
+                        VariablesJQuery.menuStageFour.fadeIn(durationTime);
+                    },delayTime)
+                },delayTime)
+            },delayTime)
+        },delayTime)
+    },delayTime)
+}

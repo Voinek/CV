@@ -1,0 +1,1 @@
+VariablesJQuery.currentFramework.text('jQuery');
