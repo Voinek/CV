@@ -18,6 +18,7 @@ const VariablesJQuery = {
     menuStageTwo: $('.menu-appear-stage-two'),
     menuStageThree: $('.menu-appear-stage-three'),
     menuStageFour: $('.menu-appear-stage-four'),
+    burgerMenu: $('#burger-menu-button'),
 }
 
 $(document).ready(()=>{
@@ -94,7 +95,7 @@ $(document).ready(()=>{
         }
     })
 
-    VariablesJQuery.loginRegisterSwitch.on('click', ()=>{ //register button functionality
+    VariablesJQuery.loginRegisterSwitch.on('click', ()=>{ //"registered?" button functionality
         if(menuStatus=='login'){
             VariablesJQuery.password2.slideDown(500);
             VariablesJQuery.confirmPassword.slideDown(500);
@@ -111,3 +112,52 @@ $(document).ready(()=>{
         }
     })
 });
+
+//menu buttons
+VariablesJQuery.burgerMenu.on('click', ()=>{ // Hide burger menu and show menu again
+    animateBurgerMenu(500,0);
+})
+
+document.querySelectorAll("#container-content2 p:nth-child(n+2)").forEach((item, index) => { // add "hide side menu" animation to every item in menu
+    item.addEventListener('click', ()=>{
+        animateHideMenu(500,500);
+        switch(index){ // button redirecting to another js file
+            case 0:
+                const meditate = new Meditate();
+            break;
+            case 1:
+
+            break;
+            case 2:
+
+            break;
+            case 3:
+
+            break;
+            case 4:
+
+            break;
+            case 5:
+
+            break;
+            case 6:
+
+            break;
+            case 7:
+
+            break;
+            case 8:
+
+            break;
+            case 9:
+
+            break;
+            default:
+                
+            break;
+        }
+    })
+})
+
+
+
