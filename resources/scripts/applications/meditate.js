@@ -4,3 +4,4 @@ class Meditate {
         console.log('Class Meditate/constructor running!');
     }
 }
+// nie ma sensu tworzenia takiej klasy

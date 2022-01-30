@@ -96,7 +96,7 @@ $(document).ready(()=>{
     })
 
     VariablesJQuery.loginRegisterSwitch.on('click', ()=>{ //"registered?" button functionality
-        if(menuStatus=='login'){
+        if(menuStatus==='login'){
             VariablesJQuery.password2.slideDown(500);
             VariablesJQuery.confirmPassword.slideDown(500);
             VariablesJQuery.loginRegisterSwitch.text('Already have account? Log In!');
