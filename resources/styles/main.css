@@ -2,6 +2,7 @@ body,
 html {
     width: 100%;
     margin: 0;
+    background-size: cover;
 }
 
 body {
@@ -119,17 +120,11 @@ button:hover {
     }
 }
 
-.menu-appear-stage-one,
-.menu-appear-stage-two,
-.menu-appear-stage-three,
-.menu-appear-stage-four {
-    display: none;
-}
-
 .menu-content {
     cursor: pointer;
     margin-bottom: -10px;
     font-size: 1.2em;
+    display: none;
 }
 
 .title {

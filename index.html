@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,8 +19,38 @@
     <link rel="stylesheet" href="./resources/styles//applications/meditate.css" type="text/css">
     <title>CV Website</title>
 </head>
+
 <body>
-    <div id="app-space"></div>
+    <div class="appSpaceMeditate">
+        <div class="time">
+            <button class="meditateButtons timeButton">
+                5 Minutes
+            </button><br>
+            <button class="meditateButtons timeButton">
+                10 Minutes
+            </button><br>
+            <button class="meditateButtons timeButton">
+                30 Minutes
+            </button>
+
+        </div>
+        <div class="timeClock">
+            <div class="percent">
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle class="progressBar" cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="pauseRenewButton">
+                    <h2>Start</h2>
+                </div>
+            </div>
+        </div>
+        <div class="theme">
+            <button class="meditateButtons themeButton">Campfire</button><br>
+            <button class="meditateButtons themeButton">Forest</button><br>
+            <button class="meditateButtons themeButton">Sea</button>
+        </div>
+    </div>
     <div id="framework-info"><span>Current framework: </span><br><span id="framework"></span></div>
     <div id="burger-menu-button"></div>
     <div id="container">
@@ -33,21 +64,24 @@
         </div>
         <div id="container-content2">
             <p class="title">My projects</p>
-            <p class="menu-content menu-appear-stage-one">Meditation</p>
-            <p class="menu-content menu-appear-stage-one">Meditation</p>
-            <p class="menu-content menu-appear-stage-one">Meditation</p>
-            <p class="menu-content menu-appear-stage-two">Meditation</p>
-            <p class="menu-content menu-appear-stage-two">Meditation</p>
-            <p class="menu-content menu-appear-stage-two">Meditation</p>
-            <p class="menu-content menu-appear-stage-three">Meditation</p>
-            <p class="menu-content menu-appear-stage-three">Meditation</p>
-            <p class="menu-content menu-appear-stage-three">Meditation</p>
-            <p class="menu-content menu-appear-stage-four">Meditation</p>
-            <p class="menu-content menu-appear-stage-four">Meditation</p>
-            <p class="menu-content menu-appear-stage-four">Meditation</p>
+            <p class="menu-content">Meditation</p>
+            <p class="menu-content">Meditation</p>
+            <p class="menu-content">Meditation</p>
+            <p class="menu-content">Meditation</p>
+            <p class="menu-content">Meditation</p>
+            <p class="menu-content">Meditation</p>
+            <p class="menu-content">Meditation</p>
+            <p class="menu-content">Meditation</p>
+            <p class="menu-content">Meditation</p>
+            <p class="menu-content">Meditation</p>
+            <p class="menu-content">Meditation</p>
+            <p class="menu-content">Meditation</p>
         </div>
     </div>
-    <div id="popup"><span id="exit-popup">X<br></span><p id="text-popup">Popup text</p></div>
-    
+    <div id="popup"><span id="exit-popup">X<br></span>
+        <p id="text-popup">Popup text</p>
+    </div>
+
 </body>
+
 </html>
