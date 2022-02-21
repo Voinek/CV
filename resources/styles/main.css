@@ -24,10 +24,10 @@ body {
     overflow: hidden;
 }
 
-#container-content2,
+#containerContentMenu,
 .hidden,
-#password2,
-#confirm-password {
+#confirmPassword,
+#passwordConfirmInput {
     display: none;
 }
 
@@ -75,27 +75,14 @@ button:hover {
 }
 
 
-#exit-popup {
+#exitPopup {
     float: right;
     margin: 0 5px;
     user-select: none;
     cursor: pointer;
 }
 
-/*.scretchAnimation {
-    animation: resizePanel 1s ease-in;
-    animation-fill-mode: forwards;
-}
-
-.scretch {
-    height: 100%;
-    left: 0;
-    top: 0;
-    transform: translate(0, 0);
-    border-radius: 0;
-}*/
-
-#framework-info {
+#frameworkInfo {
     margin: 15px;
     float: right;
     background: rgba(146, 146, 146, 0.168);
@@ -120,7 +107,7 @@ button:hover {
     }
 }
 
-.menu-content {
+.menuContent {
     cursor: pointer;
     margin-bottom: -10px;
     font-size: 1.2em;
@@ -131,7 +118,7 @@ button:hover {
     font-size: 2em;
 }
 
-.menu-content,
+.menuContent,
 .title {
     -webkit-user-select: none;
     /* Safari */
@@ -142,7 +129,7 @@ button:hover {
     user-select: none;
 }
 
-#burger-menu-button {
+#burgerMenuButton {
     position: fixed;
     width: 70px;
     height: 70px;

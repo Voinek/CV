@@ -116,5 +116,6 @@
         clearInterval(timePassedInterval);
         body.style.backgroundImage = "none";
         appBox.style.display = "none";
+        audio.remove();
     }
 }

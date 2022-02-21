@@ -17,7 +17,7 @@ const animateMenu = async (durationTime, delayTime) => { //animation changing lo
 
 
     await simpleFadeIn(VariablesJQuery.containerContentMenu, durationTime);
-    for (const elem of document.querySelectorAll('.menu-content')) {
+    for (const elem of document.querySelectorAll('.menuContent')) {
         await simpleFadeIn($(elem), durationTime);
     }
 };
@@ -38,7 +38,6 @@ const animateHideMenu = (durationTime, delayTime) => { //animation showing burge
     }, durationTime, () => {
         VariablesJQuery.burgerMenu.fadeIn(durationTime + delayTime);
     });
-    // po co uzywac setTimeout jesli w 3 argumencie mozna dac funkcje onComplete
 
 };
 const animateBurgerMenu = (durationTime, delayTime) => { //animation hiding burger menu and showing side menu

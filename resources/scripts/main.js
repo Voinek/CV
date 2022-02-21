@@ -1,24 +1,20 @@
 "use strict";
 const VariablesJQuery = {
     intro: $('#intro'),
-    exitPopup: $('#exit-popup'),
+    exitPopup: $('#exitPopup'),
     popup: $('#popup'),
-    textPopup: $('#text-popup'),
-    loginRegisterButton: $('#login-register-button'),
+    textPopup: $('#textPopup'),
+    loginRegisterButton: $('#loginRegisterButton'),
     login: $('#login'),
-    loginRegisterSwitch: $('#login-register-switch'),
-    confirmPassword: $('#confirm-password'),
-    password: $('#password'),
-    password2: $('#password2'),
+    loginRegisterSwitch: $('#loginRegisterSwitch'),
+    confirmPassword: $('#confirmPassword'),
+    password: $('#passwordInput'),
+    password2: $('#confirmPassword'),
     container: $('#container'),
-    containerContent: $('#container-content'),
-    containerContentMenu: $('#container-content2'),
+    containerContent: $('#containerContent'),
+    containerContentMenu: $('#containerContentMenu'),
     currentFramework: $('#framework'),
-    menuStageOne: $('.menu-appear-stage-one'),
-    menuStageTwo: $('.menu-appear-stage-two'),
-    menuStageThree: $('.menu-appear-stage-three'),
-    menuStageFour: $('.menu-appear-stage-four'),
-    burgerMenu: $('#burger-menu-button'),
+    burgerMenu: $('#burgerMenuButton'),
 }
 
 $(document).ready(() => {
@@ -113,7 +109,7 @@ VariablesJQuery.burgerMenu.on('click', () => { // Hide burger menu and show menu
     animateBurgerMenu(500, 0);
 })
 
-document.querySelectorAll("#container-content2 p:nth-child(n+2)").forEach((item, index) => { // add "hide side menu" animation to every item in menu
+document.querySelectorAll("#containerContentMenu p:nth-child(n+2)").forEach((item, index) => { // add "hide side menu" animation to every item in menu
     item.addEventListener('click', () => {
         animateHideMenu(500, 500);
         switch (index) { // button redirecting to another js file
