@@ -10,26 +10,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="./resources/scripts/main.js" defer></script>
     <script src="./resources/scripts/animations.js" defer></script>
     <script src="./resources/scripts/settings.js" defer></script>
     <script src="./resources/scripts/load.js" defer></script>
-    <script src="./resources/scripts/applications/meditate.js" defer></script>
     <link rel="stylesheet" href="./resources/styles/main.css" type="text/css">
-    <link rel="stylesheet" href="./resources/styles//applications/meditate.css" type="text/css">
+    <link rel="stylesheet" href="./resources/styles/applications/meditate.css" type="text/css">
+    <link rel="stylesheet" href="./resources/styles/applications/virtualKeyboard.css" type="text/css">
     <title>CV Website</title>
 </head>
 
 <body>
     <div class="appSpaceMeditate">
+
         <div class="time">
-            <button class="meditateButtons timeButton">
+            <button class="meditateButtons timeButton defaultButton">
                 5 Minutes
             </button><br>
-            <button class="meditateButtons timeButton">
+            <button class="meditateButtons timeButton defaultButton">
                 10 Minutes
             </button><br>
-            <button class="meditateButtons timeButton">
+            <button class="meditateButtons timeButton defaultButton">
                 30 Minutes
             </button>
 
@@ -46,48 +48,58 @@
             </div>
         </div>
         <div class="theme">
-            <button class="meditateButtons themeButton">Campfire</button><br>
-            <button class="meditateButtons themeButton">Forest</button><br>
-            <button class="meditateButtons themeButton">Sea</button>
+            <button class="meditateButtons themeButton defaultButton"></button><br>
+            <button class="meditateButtons themeButton defaultButton"></button><br>
+            <button class="meditateButtons themeButton defaultButton"></button>
+        </div>
+    </div>
+    <div class="appSpaceVirtualKeyboard">
+        <div class="keyboardText">
+            <h1 class="appTitle">Write something!</h1>
+            <input type="textarea" class="keyboardInput">
+        </div>
+        <div class="breakKeyboard"></div>
+        <div class="keyboard">
+            <div class="keyboardKeys"></div>
         </div>
     </div>
     <div class="appSpace">
 
     </div>
-    <div class="appSpace">
-
-    </div>
-    <div id="frameworkInfo"><span>Current framework: </span><br><span id="framework"></span></div>
-    <div id="burgerMenuButton"></div>
-    <div id="container">
-        <div id="containerContent">
-            <h1 id="intro"></h1>
-            <p>Login : <br><input type="text" id="login"></p>
-            <p>Password : <br><input type="password" id="passwordInput"></p>
-            <p id="confirmPassword">Confirm Password : <br><input type="password" id="passwordConfirmInput"></p>
-            <button id="loginRegisterButton">Log In</button>
-            <h7 id="loginRegisterSwitch">Not registered?</h7>
+    <div id="frameworkInfo" class="frameworkInfo"><span>Current framework: </span><br><span id="framework"
+            class="framework"></span></div>
+    <div id="burgerMenuButton" class="burgerMenuButton"></div>
+    <div id="container" class="container">
+        <div id="containerContent" class="containerContent">
+            <h1 id="intro" class="intro"></h1>
+            <p>Login : <br><input type="text" id="login" class="login"></p>
+            <p>Password : <br><input type="password" class="passwordInput" id=" passwordInput"></p>
+            <p id="confirmPassword" class="confirmPassword">Confirm Password : <br><input type="password"
+                    id="passwordConfirmInput" class="passwordConfirmInput"></p>
+            <button id="loginRegisterButton" class="loginRegisterButton defaultButton">Log In</button>
+            <h7 id="loginRegisterSwitch" class="loginRegisterSwitch">Not registered?</h7>
         </div>
-        <div id="containerContentMenu">
+        <div id="containerContentMenu" class="containerContentMenu">
             <p class="title">My projects</p>
             <p class="menuContent">Meditation</p>
-            <p class="menuContent">Meditation</p>
-            <p class="menuContent">Meditation</p>
-            <p class="menuContent">Meditation</p>
-            <p class="menuContent">Meditation</p>
-            <p class="menuContent">Meditation</p>
-            <p class="menuContent">Meditation</p>
-            <p class="menuContent">Meditation</p>
-            <p class="menuContent">Meditation</p>
-            <p class="menuContent">Meditation</p>
-            <p class="menuContent">Meditation</p>
-            <p class="menuContent">Meditation</p>
+            <p class="menuContent">Virtual Keyboard</p>
+            <p class="menuContent">Weather</p>
+            <p class="menuContent">PIN Pad</p>
+            <p class="menuContent">Rock Paper Scissors</p>
+            <p class="menuContent">Tic Tac Toe</p>
+            <p class="menuContent">JSON to CSV Converter</p>
+            <p class="menuContent">Quiz</p>
+            <p class="menuContent">Currency Converter</p>
+            <p class="menuContent">To-Do Notes</p>
+            <p class="menuContent">Drawing</p>
+            <p class="menuContent">Book finder</p>
         </div>
     </div>
-    <div id="popup"><span id="exitPopup">X<br></span>
-        <p id="textPopup">Popup text</p>
+    <div id="popup" class="popup"><span id="exitPopup" class="exitPopup">X<br></span>
+        <p id="textPopup" class="textPopup">Popup text</p>
     </div>
     <script src="./resources/scripts/applications/meditate.js"></script>
+    <script src="./resources/scripts/applications/virtualKeyboard.js"></script>
 </body>
 
 </html>

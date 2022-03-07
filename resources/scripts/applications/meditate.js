@@ -6,7 +6,7 @@
     let time = 5 * 60;
     let theme = 1;
     let buttonStatus = true;
-    let audio = document.createElement('audio');
+    const audio = document.createElement('audio');
     let timePassedInterval;
 
     appBox.addEventListener('mouseover', () => {
@@ -93,11 +93,9 @@
         })
     }
     const sound = url => {
-        audio.style.display = 'none';
         audio.src = url;
         audio.autoplay = true
-        audio.onended = () => audio.remove();
-        document.body.appendChild(audio);
+        audio.onended = () => audio.src = '';
     }
     const countTime = (maxTime) => {
         let time = maxTime;
@@ -108,6 +106,7 @@
                 document.querySelector('.progressBar').style.strokeDashoffset = `calc(440 - (440 * ${timePassed / time * 100}) / 100)`;
             } else {
                 clearInterval(timePassedInterval);
+                audio.src = '';
                 timePassed = 0;
             }
         }, 1000)
@@ -116,6 +115,8 @@
         clearInterval(timePassedInterval);
         body.style.backgroundImage = "none";
         appBox.style.display = "none";
-        audio.remove();
+        audio.src = "";
+        VariablesJQuery.containerContentMenu.css("color", "rgb(116, 116, 116)")
+
     }
 }

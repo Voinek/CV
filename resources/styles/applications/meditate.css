@@ -39,26 +39,26 @@
     margin: 10% 5%;
     width: 70%;
     height: 10%;
-    color: white;
+    color: rgb(116, 116, 116);
     text-align: left;
     border-radius: 5px;
     font-size: 18px;
 }
 
 .theme button:nth-child(1) {
-    background-image: url(../../../images/campfire.jpg);
+    background-image: url(../../images/campfire.jpg);
     background-position: center;
     background-size: 100%;
 }
 
 .theme button:nth-child(3) {
-    background-image: url(../../../images/forest.jpg);
+    background-image: url(../../images/forest.jpg);
     background-position: center;
     background-size: 100%;
 }
 
 .theme button:nth-child(5) {
-    background-image: url(../../../images/sea.jpg);
+    background-image: url(../../images/sea.jpg);
     background-position: center;
     background-size: 100%;
 }

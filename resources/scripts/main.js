@@ -8,9 +8,9 @@ const VariablesJQuery = {
     login: $('#login'),
     loginRegisterSwitch: $('#loginRegisterSwitch'),
     confirmPassword: $('#confirmPassword'),
-    password: $('#passwordInput'),
-    password2: $('#confirmPassword'),
-    container: $('#container'),
+    password: $('.passwordInput'),
+    password2: $('.passwordConfirmInput'),
+    container: $('.container'),
     containerContent: $('#containerContent'),
     containerContentMenu: $('#containerContentMenu'),
     currentFramework: $('#framework'),
@@ -114,45 +114,49 @@ document.querySelectorAll("#containerContentMenu p:nth-child(n+2)").forEach((ite
         animateHideMenu(500, 500);
         switch (index) { // button redirecting to another js file
             case 0:
-                appOffMeditate();
+                turnOffAll();
                 $('.appSpaceMeditate').css("display", "inline-flex");
                 VariablesJQuery.currentFramework.text('None');
                 VariablesJQuery.containerContentMenu.css("color", "white")
                 break;
             case 1:
-                appOffMeditate();
+                turnOffAll();
+                $('.appSpaceVirtualKeyboard').css("display", "inline-flex");
+                VariablesJQuery.currentFramework.text('JQuery');
+                $('body').css('background-image', 'url(/resources/images/desk.jpg)')
+                VariablesJQuery.containerContentMenu.css("color", "white")
 
                 break;
             case 2:
-                appOffMeditate();
+                turnOffAll();
 
                 break;
             case 3:
-                appOffMeditate();
+                turnOffAll();
 
                 break;
             case 4:
-                appOffMeditate();
+                turnOffAll();
 
                 break;
             case 5:
-                appOffMeditate();
+                turnOffAll();
 
                 break;
             case 6:
-                appOffMeditate();
+                turnOffAll();
 
                 break;
             case 7:
-                appOffMeditate();
+                turnOffAll();
 
                 break;
             case 8:
-                appOffMeditate();
+                turnOffAll();
 
                 break;
             case 9:
-                appOffMeditate();
+                turnOffAll();
 
                 break;
             default:
@@ -164,4 +168,5 @@ document.querySelectorAll("#containerContentMenu p:nth-child(n+2)").forEach((ite
 
 const turnOffAll = () => {
     appOffMeditate();
+    appOffVirtualKeyboard();
 }
