@@ -16,5 +16,5 @@ const LoginCredentials = {
 
 const AnimationSettings = {
     delayTime: 500,
-    durationTime: 500,
+    durationTime: 200,
 };

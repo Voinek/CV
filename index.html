@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./resources/styles/main.css" type="text/css">
     <link rel="stylesheet" href="./resources/styles/applications/meditate.css" type="text/css">
     <link rel="stylesheet" href="./resources/styles/applications/virtualKeyboard.css" type="text/css">
+    <link rel="stylesheet" href="./resources/styles/applications/weather.css" type="text/css">
     <title>CV Website</title>
 </head>
 
@@ -63,8 +64,17 @@
             <div class="keyboardKeys"></div>
         </div>
     </div>
-    <div class="appSpace">
-
+    <div class="appSpaceWeather">
+        <div class="weatherText">
+            <h1 class="appTitle">City name:</h1>
+            <input type="textarea" class="weatherInput">
+            <button class="defaultButton" id="weatherButton">Submit</button>
+        </div>
+        <div class="break"></div>
+        <div class="weather">
+            <h1 id="city" class="appTitle"></h1>
+            <div id="weatherIcon"></div>
+        </div>
     </div>
     <div id="frameworkInfo" class="frameworkInfo"><span>Current framework: </span><br><span id="framework"
             class="framework"></span></div>
@@ -100,6 +110,7 @@
     </div>
     <script src="./resources/scripts/applications/meditate.js"></script>
     <script src="./resources/scripts/applications/virtualKeyboard.js"></script>
+    <script src="./resources/scripts/applications/weather.js"></script>
 </body>
 
 </html>

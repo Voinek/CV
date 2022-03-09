@@ -129,7 +129,10 @@ document.querySelectorAll("#containerContentMenu p:nth-child(n+2)").forEach((ite
                 break;
             case 2:
                 turnOffAll();
-
+                $('.appSpaceWeather').css("display", "flex");
+                VariablesJQuery.currentFramework.text('None');
+                $('body').css('background-image', 'url(/resources/images/day.jpg)')
+                VariablesJQuery.containerContentMenu.css("color", "white")
                 break;
             case 3:
                 turnOffAll();
@@ -169,4 +172,5 @@ document.querySelectorAll("#containerContentMenu p:nth-child(n+2)").forEach((ite
 const turnOffAll = () => {
     appOffMeditate();
     appOffVirtualKeyboard();
+    appOffWeather();
 }

@@ -17,8 +17,9 @@
 
 .keyboard {
     width: 90%;
-    align-self: flex-end;
     margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
 .keyboardKeys {
@@ -45,6 +46,7 @@
     user-select: none;
     transition: 0.4s;
     cursor: pointer;
+    color: rgba(146, 146, 146, 0.568);
 }
 
 .keyKeyboard:hover {
@@ -63,6 +65,7 @@
     color: white;
     background-color: rgba(146, 146, 146, 0.168);
     border: none;
+    padding-left: 20px;
 }
 
 .keyboardInput:hover {}
@@ -73,4 +76,9 @@
 
 .appTitle {
     color: rgba(146, 146, 146, 0.568);
+}
+
+.keyboardText {
+    align-items: center;
+    justify-content: center;
 }
