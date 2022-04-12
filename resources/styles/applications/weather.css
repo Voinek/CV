@@ -46,7 +46,7 @@
 
 
 #weatherIcon {
-    background-image: url('./weather/cloudy-day-1.svg');
+    background-image: url('weather/cloudy-day-1.svg');
     width: 100px;
     height: 100px;
     background-size: cover;

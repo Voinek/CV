@@ -54,18 +54,18 @@
             startStop.innerHTML = '<h2>Stop</h2>'
             switch (theme) {
                 case 1:
-                    body.style.backgroundImage = 'url(../resources/images/campfire.jpg)'
-                    sound('../resources/sounds/campfire.mp3');
+                    body.style.backgroundImage = 'url(resources/images/campfire.jpg)'
+                    sound('resources/sounds/campfire.mp3');
                     countTime(time);
                     break;
                 case 2:
-                    body.style.backgroundImage = 'url(../resources/images/forest.jpg)';
-                    sound('../resources/sounds/forest.mp3');
+                    body.style.backgroundImage = 'url(resources/images/forest.jpg)';
+                    sound('resources/sounds/forest.mp3');
                     countTime(time);
                     break;
                 case 3:
-                    body.style.backgroundImage = 'url(../resources/images/sea.jpg)'
-                    sound('../resources/sounds/sea.mp3');
+                    body.style.backgroundImage = 'url(resources/images/sea.jpg) '
+                    sound('resources/sounds/sea.mp3');
                     countTime(time);
                     break;
                 default:

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./public/styles/header.css" type="text/css">
+    <link rel="stylesheet" href="./public/styles/storehouse.css" type="text/css">
+    <link rel="stylesheet" href="./public/styles/contact.css" type="text/css">
+    <link rel="stylesheet" href="./public/styles/main.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./public/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Voin - magazyn</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="#"><img src="public/images/logo.png" alt="logo" class="logo__img"></a>
+        <nav>
+            <ul class="nav__links">
+                <li id="storehouse"><a href="#">Magazyn</a></li>
+                <li class="nav__search"><a href="#"><input type="text" /></a></li>
+                <li id="search"><a href="#">Wyszukaj</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#">Kontakt</a>
+        <p class="menu cta">Menu</p>
+    </header>
+    <div class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="#">Magazyn</a>
+            <a href="#">Wyszukaj</a>
+        </div>
+    </div>
+    <main>
+        <h2 class="main__title">Modem ONU 1-portowy</h1>
+            <table class="table-container" width="100%" role="table" aria-label="Destinations" id="table-items">
+                <caption>Przedmiot</caption>
+                <thead>
+                    <tr class="flex-table header" role="rowgroup">
+                        <th class="flex-row first" role="columnheader">ID</th>
+                        <th class="flex-row second" role="columnheader">Opis</th>
+                        <th class="flex-row third" role="columnheader">Numer seryjny</th>
+                        <th class="flex-row fourth" role="columnheader">Zarezerwowany?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="flex-table row" role="rowgroup">
+                        <td class="flex-row first" role="cell"> 0</td>
+                        <td class="flex-row" role="cell">-</td>
+                        <td class="flex-row" role="cell">123321321321321</td>
+                        <td class="flex-row" role="cell">Nie</td>
+                    </tr>
+
+                    <tr class="flex-table row" role="rowgroup">
+                        <td class="flex-row first" role="cell"> 1</td>
+                        <td class="flex-row" role="cell">Trzeba sprawdzić czy działa, od klienta</td>
+                        <td class="flex-row" role="cell">123321321321322</td>
+                        <td class="flex-row" role="cell">Tak</td>
+                    </tr>
+                    <tr class="flex-table row" role="rowgroup">
+                        <td class="flex-row first" role="cell"> 2</td>
+                        <td class="flex-row" role="cell">Do czasu sprawdzenia jest u administratora, zarezerwowany na
+                            24.04.2022, trzeba go wyczyścić bo leżał na strychu</td>
+                        <td class="flex-row" role="cell">123321321321323</td>
+                        <td class="flex-row" role="cell">Nie</td>
+                    </tr>
+
+                    <tr class="flex-table row" role="rowgroup">
+                        <td class="flex-row first" role="cell"> 3</td>
+                        <td class="flex-row" role="cell">-</td>
+                        <td class="flex-row" role="cell">123321321321324</td>
+                        <td class="flex-row" role="cell">Nie</td>
+                    </tr>
+                    <tr class="flex-table row" role="rowgroup">
+                        <td class="flex-row first" role="cell"> 4</td>
+                        <td class="flex-row" role="cell">-</td>
+                        <td class="flex-row" role="cell">123321321321325</td>
+                        <td class="flex-row" role="cell">Nie</td>
+                    </tr>
+                    <tr class="flex-table row hidden" role="rowgroup">
+                        <td class="flex-row first" role="cell"><input type="text" id="new-id" class="input-new"></td>
+                        <td class="flex-row" role="cell"><input type="text" id="new-desc" class="input-new"></td>
+                        <td class="flex-row" role="cell"><input type="text" id="new-sn" class="input-new"></td>
+                        <td class="flex-row" role="cell"><input type="text" id="new-reserv" class="input-new"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="main__button add">
+                <span class="material-icons">
+                    add
+                </span>
+            </button>
+            <button class="main__button">
+                <span>
+                    Edycja
+                </span>
+            </button>
+    </main>
+    <div class="storehouse">
+        <h2 class="main__title">Wszystko</h1>
+            <table class="table-container" width="100%" role="table" aria-label="Destinations" id="table-storehouse">
+                <caption>Wszystkie przedmioty</caption>
+                <thead>
+                    <tr class="flex-table header" role="rowgroup">
+                        <th class="flex-row first" role="columnheader">ID</th>
+                        <th class="flex-row second-storehouse" role="columnheader">Nazwa</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody__storehouse">
+                    <tr class="flex-table row" role="rowgroup">
+                        <td class="flex-row first" role="cell"> 0
+                        </td>
+                        <td class="flex-row" role="cell">Modem ONU 4-portowy</td>
+                    </tr>
+                    <tr class="flex-table row" role="rowgroup" id="1pOnu">
+                        <td class="flex-row first" role="cell"> 1</td>
+                        <td class="flex-row" role="cell">Modem ONU 1-portowy</td>
+                    </tr>
+                    <tr class="flex-table row" role="rowgroup">
+                        <td class="flex-row first" role="cell"> 2</td>
+                        <td class="flex-row" role="cell">Przewód UTP cat.5e</td>
+                    </tr>
+                    <tr class="flex-table row" role="rowgroup">
+                        <td class="flex-row first" role="cell"> 3</td>
+                        <td class="flex-row" role="cell">Przewód UTP cat.6
+                        </td>
+                    </tr>
+                    <tr class="flex-table row" role="rowgroup">
+                        <td class="flex-row first" role="cell"> 4</td>
+                        <td class="flex-row" role="cell">Spawarka do światłowodów(czarna)
+                        </td>
+                    </tr>
+                    <tr class="flex-table row hidden-storehouse" role="rowgroup">
+                        <td class="flex-row first" role="cell"><input type="text" id="new-id-storehouse"
+                                class="input-new"></td>
+                        <td class="flex-row" role="cell"><input type="text" id="new-title-storehouse" class="input-new">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="main__button add">
+                <span class="material-icons">
+                    add
+                </span>
+            </button>
+            <button class="main__button">
+                <span>
+                    Edycja
+                </span>
+            </button>
+    </div>
+    <div class="contact">
+        <h2 class="main__title">Dane kontaktowe</h1><br>
+            <h3 class="contact__data">Służbowe:</h3>
+            <h4>+48 575 484 424</h4>
+            <h4>m.podzorski@sferanet.pl</h4><br>
+            <h3 class="contact__data">Prywatne:</h3>
+            <h4>+48 575 591 054</h4>
+            <h4>voinekkx@gmail.com</h4>
+    </div>
+    <script type="text/javascript" src="./public/scripts/search.js"></script>
+    <script type="text/javascript" src="./public/scripts/mobile.js"></script>
+    <script type="text/javascript" src="./public/scripts/adding.js"></script>
+    <script type="text/javascript" src="./public/scripts/menu.js"></script>
+    <script type="text/javascript" src="./public/scripts/generate.js"></script>
+</body>
+
+</html>

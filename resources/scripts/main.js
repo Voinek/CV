@@ -131,12 +131,12 @@ document.querySelectorAll("#containerContentMenu p:nth-child(n+2)").forEach((ite
                 turnOffAll();
                 $('.appSpaceWeather').css("display", "flex");
                 VariablesJQuery.currentFramework.text('None');
-                $('body').css('background-image', 'url(/resources/images/day.jpg)')
+                $('body').css('background-image', 'url(resources/images/day.jpg)')
                 VariablesJQuery.containerContentMenu.css("color", "white")
                 break;
             case 3:
                 turnOffAll();
-
+                document.location.href = 'resources/scripts/applications/warehouse/index.html';
                 break;
             case 4:
                 turnOffAll();
